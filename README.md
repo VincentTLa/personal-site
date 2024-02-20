@@ -1,10 +1,20 @@
-# Welcome to Remix!
+# Welcome to my repository for my site!
+
+This site was made using Remix! Learn more about it here:
 
 - [Remix Docs](https://remix.run/docs)
 
+The technology stack that this site will use will be:
+
+- Remix
+- Node.JS
+- TailwindCSS
+- MongoDB
+- Jest
+
 ## Development
 
-From your terminal:
+To run the site locally from your terminal:
 
 ```sh
 npm run dev

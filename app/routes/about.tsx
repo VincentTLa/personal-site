@@ -1,17 +1,16 @@
 import type { MetaFunction } from '@remix-run/node'
-import Homepage from '~/components/Homepage'
 
 export const meta: MetaFunction = () => {
   return [
     { title: `Vincent's Website` },
-    { name: 'Homepage', content: `Welcome to Vincent's Website!` },
+    { name: 'About Me', content: `Welcome to Vincent's Website!` },
   ]
 }
 
 export default function Index() {
   return (
-    <div className="h-screen bg-background">
-      <Homepage />
+    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
+      <h1 className="">About ME</h1>
     </div>
   )
 }
