@@ -20,15 +20,15 @@
 @layer utilities {
   .character {
     color: white;
-    font-size: 4em;
-    transform: translateY(calc(sin(var(--angle)) * 200px))
+    font-size: 2em;
+    transform: translateY(calc(sin(var(--angle)) * 150px))
       scale(calc(cos(var(--angle)) * 0.5 + 0.5));
     animation: spiral 4s linear infinite;
     display: inline-block;
   }
   .character-mobile {
-    color: black;
-    font-size: 4em;
+    color: white;
+    font-size: 1em;
     transform: translateY(calc(sin(var(--angle)) * 100px))
       scale(calc(cos(var(--angle)) * 0.5 + 0.5));
     animation: spiral 4s linear infinite;

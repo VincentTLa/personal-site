@@ -12,8 +12,8 @@ function CharacterSpiral({ words, offset, animationDuration }: CharacterSpiralTy
       {splitString.map((char, i) => (
         <div
           key={i}
-          className="character"
-          style={{ animationDelay: `-${i * (animationDuration / 16) - offset}ms` }}
+          className="character-mobile lg:character"
+          style={{ animationDelay: `-${i * (animationDuration / 32) - offset}ms` }}
         >
           {char}
         </div>

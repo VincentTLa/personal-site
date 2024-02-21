@@ -2,10 +2,10 @@ import CharacterSpiral from './CharacterSpiral'
 
 const Spiral = () => {
   const ANIMATION_DURATION = 4000
-  const words = 'Welcome To My Website'
+  const words = 'WELCOME  TO  MY  PAGE'
 
   return (
-    <div className={`h-full m-0 justify-center items-center overflow-hidden`}>
+    <div className={`h-full m-0 inline-block justify-center items-center overflow-hidden`}>
       <div
         id="spiral"
         className={`absolute flex items-center gap-2.5  top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 `}
