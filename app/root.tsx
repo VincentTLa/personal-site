@@ -1,6 +1,7 @@
 import type { LinksFunction } from '@remix-run/node'
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
 import styles from './tailwind.css'
+import MenuDropdown from './components/sidebar/MenuDropdown'
 
 export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
@@ -16,7 +17,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-background">
+        <MenuDropdown />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
