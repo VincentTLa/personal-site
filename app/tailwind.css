@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'MartelSans';
+  src: url('/Martel_Sans/MartelSans-Light.ttf') format('truetype');
+}
+
 @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;

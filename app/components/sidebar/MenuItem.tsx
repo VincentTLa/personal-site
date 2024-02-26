@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { motion } from 'framer-motion'
 import { Link } from '@remix-run/react'
 
 type MenuItemType = {
-  i: number
   title: string
-  icon: string
+  icon: any
   url: string
 }
 
@@ -25,32 +25,21 @@ const variants = {
   },
 }
 
-const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF']
-
-export const MenuItem = ({ i, title, icon, url }: MenuItemType) => {
-  const style = { border: `2px solid ${colors[i]}` }
+export const MenuItem = ({ title, icon, url }: MenuItemType) => {
   return (
     <motion.li
-      className="list-none mb-5 flex items-center cursor-pointer"
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link to={`${url}`}>
+      <Link
+        to={`${url}`}
+        className="list-none mb-5 flex items-center cursor-pointer"
+      >
         {/* Icon */}
-        <div
-          className="w-10 h-10 rounded-[50%] flex-[40px 0] mr-5"
-          style={style}
-        >
-          {icon}
-        </div>
+        <div className="w-10 h-10 rounded-[50%] flex-[40px 0] mr-5">{icon}</div>
         {/* Text */}
-        <div
-          className="rounded-md w-52 h-5 flex-1"
-          style={style}
-        >
-          {title}
-        </div>
+        <div className="text-xl font-martel-sans text-gray-900">{title}</div>
       </Link>
     </motion.li>
   )

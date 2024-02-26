@@ -12,6 +12,9 @@ export default {
         'off-white': '#b8b6bd',
         background: '#211d3d',
       },
+      fontFamily: {
+        'martel-sans': ['MartelSans', 'open-sans'],
+      },
     },
   },
   plugins: [],
