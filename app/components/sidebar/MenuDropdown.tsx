@@ -38,7 +38,7 @@ function MenuDropdown() {
       ref={containerRef}
     >
       <motion.div
-        className="absolute top-0 right-0 bottom-0 w-[300px] bg-gray-300"
+        className="absolute top-0 right-0 bottom-0 w-[300px] bg-gradient-to-br from-slate-50 to-gray-200"
         variants={sidebar}
       />
       {/* <AnimatePresence>{isOpen && <Navigation />}</AnimatePresence> */}
