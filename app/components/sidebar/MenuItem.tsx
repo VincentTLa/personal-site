@@ -6,6 +6,7 @@ type MenuItemType = {
   title: string
   icon: any
   url: string
+  toggle: any
 }
 
 const variants = {
@@ -25,9 +26,10 @@ const variants = {
   },
 }
 
-export const MenuItem = ({ title, icon, url }: MenuItemType) => {
+export const MenuItem = ({ title, icon, url, toggle }: MenuItemType) => {
   return (
     <motion.li
+      onClick={toggle}
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

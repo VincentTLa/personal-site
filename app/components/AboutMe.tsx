@@ -1,12 +1,9 @@
-import TextAnim from './TextAnimation'
-
 function AboutMe() {
   return (
-    <div className="mx-5 mt-5 p-5">
-      {/* Hero Greeting */}
-      <div className=" mb-20">
-        <TextAnim />
-      </div>
+    <div
+      className="mx-5 mt-5 p-5"
+      id="about"
+    >
       {/* About Me Section */}
       <div className="py-5 text-white">
         <p className="text-2xl font-martel-sans">About Me</p>

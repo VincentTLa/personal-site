@@ -32,16 +32,14 @@ export default function TextAnim() {
   }, [])
 
   return (
-    <div className="absolute">
+    <div className="">
       <div className="">
-        <motion.span className="font-martel-sans text-white text-4xl font-bold">
+        <motion.span className="font-martel-sans text-3xl font-bold">
           {displayTextGretting}
         </motion.span>
       </div>
 
-      <motion.span className="font-martel-sans text-white text-3xl font-bold">
-        {displayTextName}
-      </motion.span>
+      <motion.span className="font-martel-sans text-2xl font-bold">{displayTextName}</motion.span>
       <CursorBlinker />
     </div>
   )

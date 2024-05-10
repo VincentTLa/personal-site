@@ -31,18 +31,21 @@ function MenuDropdown() {
   const { height } = useDimensions(containerRef)
   return (
     <motion.nav
-      className="absolute z-50 top-0 right-0 bottom-0 w-[300px]"
+      className="fixed z-50 top-0 right-0 bottom-0 w-[300px]"
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}
     >
       <motion.div
-        className="absolute top-0 right-0 bottom-0 w-[300px] bg-gradient-to-br from-slate-50 to-gray-200"
+        className="fixed top-0 right-0 bottom-0 w-[300px] bg-gradient-to-br from-slate-50 to-gray-200 "
         variants={sidebar}
       />
       {/* <AnimatePresence>{isOpen && <Navigation />}</AnimatePresence> */}
-      <Navigation isOpen={isOpen} />
+      <Navigation
+        isOpen={isOpen}
+        toggle={() => toggleOpen()}
+      />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   )

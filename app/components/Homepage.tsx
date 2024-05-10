@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import Spiral from './Spiral'
 import AboutMe from './AboutMe'
+import Landing from './Landing'
 
 const Homepage = () => {
   // const { scrollYProgress } = useScroll()
@@ -12,10 +12,11 @@ const Homepage = () => {
       className=""
     >
       {/* First Screen */}
+      <Landing />
       {/* <Spiral /> */}
-      <AboutMe />
 
       {/* Second Screen */}
+      <AboutMe />
       {/* Third Screen */}
     </motion.div>
   )
