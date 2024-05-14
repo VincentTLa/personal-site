@@ -17,7 +17,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-gradient-to-br from-background to-gray-800">
+      <body>
         <MenuDropdown />
         <Outlet />
         <ScrollRestoration />

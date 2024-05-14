@@ -1,24 +1,41 @@
 import TextAnim from './TextAnimation'
 import Profile from '../../public/images/profile.png'
+import SocialCard from './SocialCard'
+import GithubIcon from '../components/content/GithubIcon'
+import LinkedIcon from '../components/content/LinkedInIcon'
+import MailIcon from '../components/content/MailIcon'
 
 const Landing = () => {
   return (
-    <div className="h-screen mx-2">
-      <div className="mt-20 mx-5 bg-white h-3/4 rounded-2xl drop-shadow-xl">
+    <div className="pt-32 mx-2">
+      <div className="mx-4 min-[540px]:mx-auto p-4 pb-20 min-[540px]:w-[500px] bg-white rounded-2xl drop-shadow-xl overflow-hidden">
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
         {/* Hero Greeting */}
-        <div className="p-4 fixed">
+        <div className="p-4 fixed text-white">
           <TextAnim />
         </div>
-        <div className="pt-28">
+        <div className="pt-32">
           <img
             src={Profile}
             alt="profile"
-            className="w-3/4 h-3/4 mx-auto rounded-[50%] shadow-md"
+            className="w-3/4 h-3/4 mx-auto  min-[425px]:w-[250px] min-[425px]:h-[250px] rounded-[50%] shadow-2xl drop-shadow-2xl relative"
           />
-          <div className="bg-green-100 mt-6">
-            <li></li>
-            <li></li>
-            <li></li>
+          <div className="flex flex-col gap-y-2 mt-6">
+            <SocialCard
+              icon={<GithubIcon />}
+              link="https://github.com/VincentTLa"
+            >
+              VincentTLa
+            </SocialCard>
+            <SocialCard
+              icon={<LinkedIcon />}
+              link="https://www.linkedin.com/in/vincent-la-2ab335212/"
+            >
+              Vincent La
+            </SocialCard>
+            <SocialCard icon={<MailIcon />}>vtla101@gmail.com</SocialCard>
           </div>
         </div>
       </div>

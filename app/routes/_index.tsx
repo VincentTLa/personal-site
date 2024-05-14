@@ -10,7 +10,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="h-screen">
+    <div className="h-screen bg-gradient-to-br from-background to-gray-800">
       <Homepage />
     </div>
   )

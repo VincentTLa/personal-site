@@ -9,12 +9,12 @@ const Homepage = () => {
     // GOAL: Scroll down the page smoothly to the next section (First Screen -> Second Screen -> Third Screen) using Framer Motion
     <motion.div
       // style={{ scale }}
-      className=""
+      className="bg-gradient-to-br from-indigo-900 to-slate-700"
     >
       {/* First Screen */}
-      <Landing />
-      {/* <Spiral /> */}
-
+      <div className="h-screen">
+        <Landing />
+      </div>
       {/* Second Screen */}
       <AboutMe />
       {/* Third Screen */}
