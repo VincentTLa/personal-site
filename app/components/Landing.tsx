@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import TextAnim from './TextAnimation'
 import Profile from '../../public/images/profile.png'
 import SocialCard from './SocialCard'
@@ -7,7 +8,7 @@ import MailIcon from '../components/content/MailIcon'
 
 const Landing = () => {
   return (
-    <div className="pt-32 mx-2">
+    <div className="pt-20 mx-2">
       <div className="mx-4 min-[540px]:mx-auto p-4 pb-20 min-[540px]:w-[500px] bg-white rounded-2xl drop-shadow-xl overflow-hidden">
         <div className="wave"></div>
         <div className="wave"></div>

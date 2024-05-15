@@ -1,30 +1,9 @@
 function AboutMe() {
-  const aboutMeCode = `
-  .aboutMe {
-    name : Vincent;
-    role: Jr. Full Stack Developer;
-  }
-  `
-
   return (
     <div
-      className="p-5 h-screen"
+      className="p-5"
       id="about"
     >
-      {/* About Me Section */}
-      {/* <div className="min-[540px]:mx-auto p-10 min-[540px]:w-[500px] bg-white rounded-2xl drop-shadow-xl overflow-hidden">
-        <div className="py-5">
-          <p className="text-2xl font-martel-sans font-bold py-2">About Me</p>
-          <p className="font-martel-sans">
-            I&apos;m a passionate certified AWS Jr. Full Stack Developer that has only just begun
-            their journey within the wonderful field of software development 🚀 <br />
-            <br />I like to bring innovative and dynamic approaches to the table, where I continue
-            to improve on the intricate dance of front-end and back-end technologies to help create
-            smooth running applications
-          </p>
-        </div>
-      </div> */}
-
       <div className="mx-auto pb-2 m-0 min-[540px]:w-[500px] bg-[#24233b] z-10 rounded-lg drop-shadow-md">
         <div className="m-1 rounded">
           <div className="flex items-center pl-2">
@@ -44,12 +23,40 @@ function AboutMe() {
         </div>
 
         <div className="text-center">
-          <textarea
-            readOnly={true}
-            defaultValue={aboutMeCode}
-            name="code"
-            className="p-2 h-[350px] min-[540px]:w-[450px] w-[300px] resize-none rounded bg-[#49465C] text-white border-none"
-          ></textarea>
+          <div
+            className="p-2 mx-2 h-[350px] resize-none rounded bg-[#49465C] text-white border-none overflow-y-scroll"
+            style={{ overflowY: 'scroll' }}
+          >
+            <div className="grid grid-cols-6 mx-2">
+              <div className="col-span-6 text-left">
+                <p>{`{`}</p>
+              </div>
+              <div className="col-span-1 text-left text-[#6bc0ea] min-[420px]:ml-4">
+                <p>{`"name":`}</p>
+                <p>{`"role":`}</p>
+                <p>{`"certs":`}</p>
+                <p>{`"desc":`}</p>
+              </div>
+              <div className="col-span-5 text-left mx-6 min-[420px]:ml-6">
+                <p>{`"Vincent"`}</p>
+                <p className="text-nowrap">{`"Jr. Full Stack Developer"`}</p>
+                <p className="text-nowrap">{`"AWS Developer (DVA-C02)"`}</p>
+                <p>{`"I'm a passionate certified AWS Jr. Full Stack Developer
+        that has only just begun their 
+        journey within the wonderful
+        field of software development 🚀 
+        I like to bring innovative and 
+        dynamic approaches to the table, 
+        where I continue to improve on 
+        the intricate dance of front-end 
+        and back-end technologies to help 
+        create smooth running applications"`}</p>
+              </div>
+              <div className="col-span-6 text-left">
+                <p>{`}`}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
