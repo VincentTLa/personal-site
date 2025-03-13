@@ -4,7 +4,7 @@ function Projects() {
   return (
     <div
       id="skills"
-      className="mx-auto p-2 pt-10 m-0 min-[540px]:w-[500px] lg:w-3/4 max-w-[1000px] text-white"
+      className="h-screen mx-auto p-2 pt-10 m-0 min-[540px]:w-[500px] lg:w-3/4 max-w-[1000px] text-white"
     >
       <h1 className="p-2 font-martel-sans text-3xl">Projects 💡</h1>
       <p className="p-2">I like to make things, feel free to check them out below!</p>
