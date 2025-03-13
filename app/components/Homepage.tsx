@@ -77,7 +77,7 @@ const Homepage = () => {
       {/* Third Screen */}
       <div
         id="projects"
-        className=" pb-20"
+        className="pb-20"
       >
         <Projects />
       </div>

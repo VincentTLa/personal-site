@@ -10,6 +10,13 @@ function Projects() {
       <p className="p-2">I like to make things, feel free to check them out below!</p>
       <div className="flex flex-col gap-y-3">
         <GithubCard
+          projectName="deal-searcher"
+          link="https://github.com/VincentTLa/deal-searcher"
+          skills="Typescript | React Native | Express"
+        >
+          An application to help search for deals using the OzBargain website.
+        </GithubCard>
+        <GithubCard
           projectName="budget-tracker"
           link="https://github.com/brandonwilbert8/budget-tracker"
           skills="Typescript | React Native | Express.js | MongoDB"
